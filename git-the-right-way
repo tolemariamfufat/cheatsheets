@@ -1,0 +1,23 @@
+#Install Gh
+
+sudo apt install gh
+#First time set up
+gh auth login
+
+#Set the Repo to use GH auth
+
+git remote set-url origin git@github.com:ChrisTitusTech/project.git
+#Quick Aliases
+gcom() {
+	git add .
+	git commit -m "$1"
+	}
+lazyg() {
+	git add .
+	git commit -m "$1"
+	git push
+}
+
+# example; gocom "article"
+
+# lazyg (and then enter)
